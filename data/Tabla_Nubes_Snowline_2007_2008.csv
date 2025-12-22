@@ -1,0 +1,3 @@
+ID_completo,Fecha,Fecha_dt,Satelite,Nubes_inicial_%,Nubes_±5d_%,Nubes_vecinos_%,Nubes_DEM_%,Nubes_DEM_inverso_%,Nubes_MODIS_%,Snowline_DEM_m,Snowline_DEM_inverso_m,MODIS_iters,Export_task_description,Error
+LANDSAT/LT05/C02/T1_TOA/LT05_198030_20080324,2008-03-24,2008-03-24,LANDSAT_5,,,,,,,,,,,Number.subtract: Parameter 'left' is required and may not be null.
+LANDSAT/LT05/C02/T1_TOA/LT05_198030_20080425,2008-04-25,2008-04-25,LANDSAT_5,4.95,4.95,0.11,0.11,0.11,0.11,,,0.00,2008_04_25-Landsat5,

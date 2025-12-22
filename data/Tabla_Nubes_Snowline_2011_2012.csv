@@ -1,0 +1,2 @@
+ID_completo,Fecha,Fecha_dt,Satelite,Nubes_inicial_%,Nubes_±5d_%,Nubes_vecinos_%,Nubes_DEM_%,Nubes_DEM_inverso_%,Nubes_MODIS_%,Snowline_DEM_m,Snowline_DEM_inverso_m,MODIS_iters,Export_task_description
+LANDSAT/LT05/C02/T1_TOA/LT05_198030_20111011,2011-10-11,2011-10-11,LANDSAT_5,0.05,0.05,0.05,0.05,0.05,0.05,,,0,2011_10_11-Landsat5
