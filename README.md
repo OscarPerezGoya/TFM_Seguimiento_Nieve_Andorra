@@ -16,7 +16,9 @@ El respositorio se estructura de la siguiente forma:
 - snow_coverage/: Incluye el archivo a sustituir para lanzar el código de "Ínidice de nieve con Deep Learning SonwCoverage" (make_prediction.py) y el resultado (mapa de nieve/no nieve) resultante para la zona de estudio. 
 
 ## Herramientas utilizadas
-El código se ha generado en Google Colab utilizando las librerías que se incluyen en el notebook facilitado. 
+El código se ha generado en Google Colab utilizando las librerías que se incluyen en el notebook facilitado. Para acceder al código utilice el siguiente enlace:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OscarPerezGoya/TFM_Seguimiento_Nieve_Andorra/blob/main/codigo/imaglandsat.ipynb)
+
 
 Los datos satelitales así como el preprocesado se ha realizado con la herramienta de Google Earth Engine. Además, los datos obtenidos (imágenes y datasets) se han guardado en Drive de Google personal.
 
