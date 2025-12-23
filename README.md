@@ -18,13 +18,13 @@ El respositorio se estructura de la siguiente forma:
 ## Herramientas utilizadas
 El código se ha generado en Google Colab utilizando las librerías que se incluyen en el notebook facilitado. 
 
-Los datos satelitales así como el preprocesado se ha realizado con la herramienta de Google Earth Engine. Además, los datos se han ido guardando en Drive de Google personal.
+Los datos satelitales así como el preprocesado se ha realizado con la herramienta de Google Earth Engine. Además, los datos obtenidos (imágenes y datasets) se han guardado en Drive de Google personal.
 
 ## Instrucciones de uso
 
 Para el correcto funcionamiento del código es necedario conocer que:
 
-- el código necesita que el usuario esté dado de alta en la plataforma de Google Earth Engine para poder acceder y procesar los datos satelitales. Las rutas de guardado de los datos (datasets y mapas resultantes) son de Google Drive y pueden ser modificadas en el código para guardar los resultados en otros directorios.
+- el código necesita que el usuario esté autenticado en la plataforma de Google Earth Engine para poder acceder y procesar los datos satelitales. Las rutas de guardado de los datos (datasets y mapas resultantes) son de Google Drive y pueden ser modificadas en el código para guardar los resultados en otros directorios.
 - Para el lanzamiento del código del apartado "Ínidice de nieve con Deep Learning SonwCoverage", se recomienda el uso de GPU. Además, se debe sustiuir el archivo   make_prediction.py que se instala del repositorio facilitado por los  autores del algoritmo SnowCoverage por el archivo make_prediction.py que se incluye en la carpeta snow_coverage_DL.
 
 ## Resultados obtenidos:
