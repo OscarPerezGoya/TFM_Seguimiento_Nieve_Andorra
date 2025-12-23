@@ -1,6 +1,7 @@
 # Información contenida en la carpeta /codigo
 
-La carpeta incluye el código en formato ipynb generado en Google Colab.
+Para acceder al código, se debe seguir el siguiente enlace:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OscarPerezGoya/TFM_Seguimiento_Nieve_Andorra/blob/main/codigo/imaglandsat.ipynb)
 
 En el archov README.md de la carpeta raíz, se incluyen las instrucciones genéricas para la ejecución del código y los resultados obtenidos (mapas, tablas y dashboard). 
 
