@@ -1,7 +1,7 @@
 #"Evolución de la Presencia de Nieve en el Suelo en Andorra"
 
 ## Introducción
-Trabajo Final de Máster titulado "Evolución de la Presencia de Nieve en el Suelo en Andorra" redactado por Óscar Pérez Goya en diciembre de 2025.
+Trabajo Final de Máster del Master de Ciencia de Datos de la Universidad Abierta de Cataluña, titulado "Evolución de la Presencia de Nieve en el Suelo en Andorra" redactado por Óscar Pérez Goya en diciembre de 2025.
 
 El trabajo consiste en la elaboración de una cartografía en la que se clasifica, para el territorio andorrano la superficie en las categorías siguientes: valores nulos/nieve/no nieve/nubes remanentes, durante el periodo invernal a lo largo de una serie de años (desde abril de 2013 hasta junio de 2025). 
 
