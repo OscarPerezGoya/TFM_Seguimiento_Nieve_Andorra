@@ -27,7 +27,11 @@ Los datos satelitales así como el preprocesado se ha realizado con la herramien
 Para el correcto funcionamiento del código es necedario conocer que:
 
 - el código necesita que el usuario esté autenticado en la plataforma de Google Earth Engine para poder acceder y procesar los datos satelitales. Las rutas de guardado de los datos (datasets y mapas resultantes) son de Google Drive y pueden ser modificadas en el código para guardar los resultados en otros directorios.
-- Para el lanzamiento del código del apartado "Ínidice de nieve con Deep Learning SonwCoverage", se recomienda el uso de GPU. Además, se debe sustiuir el archivo   make_prediction.py que se instala del repositorio facilitado por los  autores del algoritmo SnowCoverage por el archivo make_prediction.py que se incluye en la carpeta snow_coverage_DL.
+- el código utiliza archivos mapas publicados que deben ser descargados y guardados para el funcionamiento del código:
+    - **Frontera de Andorra**: https://www.ideandorra.ad/geodades/ Se debe descargar la capa "Frontera d'Andorra (SHP)" en formato shapefile
+    - **Cubiertas del suelo**: https://www.iea.ad/mapa-de-cobertes-del-sol-d-andorra-2012 Se debe descargar el archivo de "Mapa SIG (ArcGis)" en formato shapefile
+    - **Modelo digital de elevaciones**: https://www.ideandorra.ad/geodades/ Se debe descargar el "Model digital del Terreny 15m any 2003" en formato txt. 
+- Para el lanzamiento del código del apartado "Ínidice de nieve con Deep Learning SonwCoverage", se recomienda el uso de GPU. Además, se debe sustiuir el archivo   make_prediction.py que se instala del repositorio facilitado por los autores del algoritmo SnowCoverage, por el archivo make_prediction.py que se incluye en la carpeta snow_coverage_DL.
 
 ## Resultados obtenidos:
 
@@ -42,9 +46,3 @@ Los resultados obtenidos son:
 ## Licencia
 
 Véase archivo LICENSE.md 
-
-
-
-
-
-
