@@ -5,7 +5,7 @@ El trabajo incluido en este repositorio se publica bajo la licencia **Creative C
 ## Resumen de la licencia  
 https://creativecommons.org/licenses/by-nc/3.0/es/
 
-## Código lega  
+## Código legal  
 https://creativecommons.org/licenses/by-nc/3.0/es/legalcode
 
 ## Atribución
