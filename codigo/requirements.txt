@@ -1,0 +1,8 @@
+shiny
+numpy
+pandas
+matplotlib
+folium
+geopandas
+shapely
+rasterio
