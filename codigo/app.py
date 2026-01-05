@@ -647,7 +647,10 @@ def server(input, output, session):
         if not tif_path.exists():
             return ui.HTML(f"<div style='padding:16px'>No existe el TIFF: {tif_path}</div>")
 
+        fig = folium.Figure(width="100%", height=340)
         m = folium.Map(location=[42.55, 1.60], zoom_start=10, tiles=None, control_scale=True)
+        m.add_to(fig)
+
         folium.TileLayer("OpenStreetMap", name="OpenStreetMap", control=True, show=True).add_to(m)
 
         arr4326, bounds = _safe_to_4326_raster(tif_path, max_size=700, resampling=RioResampling.nearest)
@@ -676,7 +679,7 @@ def server(input, output, session):
         plugins.MousePosition(position="bottomleft").add_to(m)
 
         folium.LayerControl(collapsed=False).add_to(m)
-        return ui.HTML(m._repr_html_())
+        return ui.HTML(fig._repr_html_())
 
     @output
     @render.plot
