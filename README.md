@@ -10,8 +10,8 @@ La información satelital se obtiene de los sonsores instalados en los satélite
 ## Estructura del repositorio 
 El respositorio se estructura de la siguiente forma:
 
-- codigo/: notebook de Google Colab con el código generado 
-- data/: datasets generados en formato csv que contienen la información de los satélites disponibles para el periodo de estudio, la información de procesado de cada una de las imágenes junto con las principales estadísticas asociadas a cada imagen
+- codigo/: notebook de Google Colab con el código generado, incluye el código de Shyny embebido. Además se incluye en la carpeta el código app.py que permite la conexión de Posit Connect Cloud con Shiny y así poder obtener una URL del dashboard. Se incluye en esta carpeta el archivo requirements.txt necesarios para la ejecución de app.py. 
+- data/: datasets generados en formato csv que contienen la información de los satélites disponibles para el periodo de estudio, la información de procesado de cada una de las imágenes junto con las principales estadísticas asociadas a cada imagen. Se incluye la subcarpeta Frontera_Andorra, necesaria para lanzar app.py y obtener la publicación del dashboard de shiny mediante  Posit Connect Cloud.
 - mapas_nieve/: Esta carpeta incluye las imágenes resultantes clasificadas (valores nulos/nieve/no nieve/nubes remanentes) en formato GeoTiff.
 - snow_coverage/: Incluye el archivo a sustituir para ejecutar el código de "Ínidice de nieve con Deep Learning SonwCoverage" (make_prediction.py) y el resultado (mapa de nieve/no nieve) resultante para la zona de estudio. 
 
@@ -26,11 +26,12 @@ Los datos satelitales así como el preprocesado se ha realizado con la herramien
 Para el correcto funcionamiento del código es necedario conocer que:
 
 - el código necesita que el usuario esté autenticado en la plataforma de Google Earth Engine para poder acceder y procesar los datos satelitales. Las rutas de guardado de los datos (datasets y mapas resultantes) son de Google Drive y pueden ser modificadas en el código para guardar los resultados en otros directorios.
+- el código debe actualizarse según el usuario guarde la capa shapefile de Frontera_Andorra que se encuentra en la carpeta /data. Esta capa proviene de https://www.ideandorra.ad/geodades/ Se debe descargar la capa "Frontera d'Andorra (SHP)" en formato shapefile. 
 - el código utiliza archivos de mapas publicados que deben ser descargados y guardados para el funcionamiento del código:
-    - **Frontera de Andorra**: https://www.ideandorra.ad/geodades/ Se debe descargar la capa "Frontera d'Andorra (SHP)" en formato shapefile.
     - **Cubiertas del suelo**: https://www.iea.ad/mapa-de-cobertes-del-sol-d-andorra-2012 Se debe descargar el archivo de "Mapa SIG (ArcGis)" en formato shapefile.
     - **Modelo digital de elevaciones**: https://www.ideandorra.ad/geodades/ Se debe descargar el "Model digital del Terreny 15m any 2003" en formato txt. 
 - Para el lanzamiento del código del apartado "Ínidice de nieve con Deep Learning SonwCoverage", se recomienda el uso de GPU. Además, se debe sustiuir el archivo  make_prediction.py que se instala del repositorio facilitado por los autores del algoritmo SnowCoverage, por el archivo make_prediction.py que se incluye en la carpeta snow_coverage_DL.
+- Para la visualización del dashboard directamente mediante la nube de Posit, acceda mediante la URL: https://019b900f-159f-3fcb-1c74-31227e5dad69.share.connect.posit.cloud/ 
 
 ## Resultados obtenidos:
 
@@ -40,7 +41,7 @@ Los resultados obtenidos son:
 - los datasets de registro de las imágenes obtenidas (un dataset por cada temporada invernal): Tabla_Nubes_Snowline_<Temporada>.csv
 - el dataset con la información estadística de cada imagen satelital procesada: estadisticas_mapas_nieve.csv
 - el dataset con la información estadística agregada por temporadas:  estadisticas_agregadas.csv
-- Dashboard en shinuy que permite la visualizacion de los mapas clasificados y diversas gráficas con los valores obtenidos.
+- Dashboard en Shiny que permite la visualizacion de los mapas clasificados y diversas gráficas con los valores obtenidos.
 
 ## Licencia
 
