@@ -30,7 +30,7 @@ CSV_AGG = DATA_DIR / "estadisticas_agregadas.csv"
 ANDORRA_SHP = DATA_DIR / "Frontera_Andorra" / "Frontera_Andorra.shp"
 
 
-# WKT CRS (tuyo)
+# WKT CRS
 NTF_Lambert_Sud_WKT = (
     'PROJCS["NTF_Paris_Lambert_Sud_France",'
     'GEOGCS["GCS_NTF_Paris",DATUM["D_NTF",SPHEROID["Clarke_1880_IGN",6378249.2,293.46602]],'
