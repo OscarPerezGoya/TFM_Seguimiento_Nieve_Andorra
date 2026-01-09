@@ -5,7 +5,7 @@ Trabajo Final de Máster del Master de Ciencia de Datos de la Universidad Abiert
 
 El trabajo consiste en la elaboración de una cartografía en la que se clasifica, para el territorio andorrano, la superficie en las categorías siguientes: valores nulos/nieve/no nieve/nubes remanentes, durante el periodo invernal a lo largo de una serie de años (desde abril de 2013 hasta junio de 2025). Los resultados se presentan en un dashboard que se divide en dos pestañas, la primera muestra los datos diarios (de una imagen clasificada) y la segunda, los datos (en forma de gráficas), por temporadas de invierno.
 
-La información satelital se obtiene de los sonsores instalados en los satélites Sentinel-2 y la familia de satélites Landsat. El acceso a los datos se ha realizado mediante la plataforma de Google Earth Engine.
+La información satelital se obtiene de los sonsores instalados en los satélites Sentinel-2 y la familia de satélites Landsat. El acceso a los datos satelitalesse ha realizado mediante la plataforma de Google Earth Engine.
 
 ## Estructura del repositorio 
 El respositorio se estructura de la siguiente forma:
