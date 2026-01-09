@@ -10,8 +10,8 @@ La información satelital se obtiene de los sonsores instalados en los satélite
 ## Estructura del repositorio 
 El respositorio se estructura de la siguiente forma:
 
-- codigo/: notebook de Google Colab con el código generado, incluye el código de Shyny embebido. Además se incluye en la carpeta el código app.py y requeriments.txt, archivos necesarios para poder publicar y compartir el dashboard directamente mediante una URL: https://019b900f-159f-3fcb-1c74-31227e5dad69.share.connect.posit.cloud/
-- data/: datasets generados en formato csv que contienen la información de los satélites disponibles para el periodo de estudio, la información de procesado de cada una de las imágenes junto con las principales estadísticas asociadas a cada imagen. Se incluye la subcarpeta Frontera_Andorra, necesaria para lanzar app.py y obtener la publicación del dashboard de shiny mediante  Posit Connect Cloud.
+- codigo/: notebook de Google Colab con el código generado, incluye el código de Shiny embebido. Además se incluye en la carpeta el código app.py y requeriments.txt, archivos necesarios para poder publicar y compartir el dashboard directamente mediante una URL: https://019b900f-159f-3fcb-1c74-31227e5dad69.share.connect.posit.cloud/
+- data/: datasets generados en formato csv que contienen la información de los satélites disponibles para el periodo de estudio, la información de procesado de cada una de las imágenes junto con las principales estadísticas asociadas a cada imagen y las estadísticas por temporada. Se incluye la subcarpeta Frontera_Andorra, necesaria para lanzar app.py y obtener la publicación del dashboard de Shiny mediante Posit Connect Cloud.
 - mapas_nieve/: Esta carpeta incluye las imágenes resultantes clasificadas (valores nulos/nieve/no nieve/nubes remanentes) en formato GeoTiff.
 - snow_coverage/: Incluye el archivo a sustituir para ejecutar el código de "Ínidice de nieve con Deep Learning SonwCoverage" (make_prediction.py) y el resultado (mapa de nieve/no nieve) resultante para la zona de estudio. 
 
